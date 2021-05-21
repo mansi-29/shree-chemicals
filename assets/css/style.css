@@ -83,7 +83,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header .logo h1 {
-  font-size: 1.5em;
+  font-size: 23px;
   margin: 0;
   padding: 0;
   line-height: 1;
@@ -652,6 +652,11 @@ section {
 .our-products-h2
 {
   padding-top: 6% !important;
+}
+
+.our-products-h2::after
+{
+  width: 98px !important;
 }
 
 .section-title h2::after {
@@ -2045,6 +2050,7 @@ font-size: 1rem;
   background: #88bfe4;
   color: #fff;
   transition: all 0.4s;
+  font-weight: 900;
 }
 
 #mail-icon i:hover {

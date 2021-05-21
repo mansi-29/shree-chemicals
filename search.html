@@ -1,0 +1,107 @@
+<!DOCTYPE html> 
+<html> 
+      
+<head> 
+    <title> 
+        Creating Search Bar using HTML 
+        CSS and Javascript 
+    </title> 
+      
+    <!-- linking the stylesheet(CSS) -->
+    <style>
+        #searchbar{ 
+     margin-left: 15%; 
+     padding:15px; 
+     border-radius: 10px; 
+   } 
+ 
+   input[type=text] { 
+      width: 30%; 
+      -webkit-transition: width 0.15s ease-in-out; 
+      transition: width 0.15s ease-in-out; 
+   } 
+ 
+   /* When the input field gets focus, 
+        change its width to 100% */
+   input[type=text]:focus { 
+     width: 70%; 
+   } 
+ 
+  #list{ 
+    font-size:  1.5em; 
+    margin-left: 90px; 
+   } 
+ 
+.animals{ 
+   display: list-item;     
+  } 
+  </style>
+</head> 
+  
+<body> 
+      
+    <!-- input tag -->
+    <input id="searchbar" onkeyup="search_animal()" type="text"
+        name="search" placeholder="Search animals.."> 
+      
+    <!-- ordered list -->
+    <div class="container">
+    <p>wbdfjkewflekfl;r;</p>
+    </div>
+    <div id="container">
+        
+    </div>
+      <div class="container">
+    <p>wbdfjkewflekfl;r;</p>
+    </div>
+    <!-- linking javscript -->
+    <script>
+        function search_animal() { 
+    let input = document.getElementById('searchbar').value 
+    input=input.toLowerCase(); 
+    let Adhesives = ['adhesives','fevicol','fevi']; 
+    let Something_Adhesive_Like = ['medicine','tablet','drug','fevi']; 
+    let l=document.getElementById('l');
+    var dict = { Adhesives: "./Adhesives.html" , 
+             Something_Adhesive_Like : "kkk" , 
+             z : "ggg"
+           };  
+    var res = []
+    for (i = 0; i < Adhesives.length; i++) {  
+        if (!Adhesives[i].toLowerCase().includes(input)) { 
+            
+        } 
+        else { 
+            res.push('Adhesives'); 
+            break;                 
+        } 
+    } 
+    for (i = 0; i < Something_Adhesive_Like.length; i++) {  
+        if (!Something_Adhesive_Like[i].toLowerCase().includes(input)) { 
+            
+        } 
+        else { 
+            res.push('Something_Adhesive_Like'); 
+            break;                
+        } 
+    } 
+    const cont=document.getElementById('container');
+    cont.innerHTML ='';
+    const ul=document.createElement('ul');
+    ul.setAttribute('id','theList');
+    
+    for (i=0;i<res.length;i++)
+    {
+        const li=document.createElement('li');
+        var aTag = document.createElement('a');
+        aTag.setAttribute('href',dict[res[i]]);
+        aTag.innerText = res[i];
+        li.appendChild(aTag);
+        ul.appendChild(li);
+    }
+    cont.appendChild(ul);
+} 
+    </script> 
+</body> 
+  
+</html> 

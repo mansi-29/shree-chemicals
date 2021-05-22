@@ -12,6 +12,10 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
+.container {
+  max-width: 75rem !important;
+}
+
 a {
   color: #ef6603;
 }

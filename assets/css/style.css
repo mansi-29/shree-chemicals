@@ -699,6 +699,11 @@ section {
   font-weight: 700;
 }
 
+#about img{
+  margin: 0 auto;
+  display: block;
+}
+
 @media screen 
   and (min-device-width: 1140px) 
   and (-webkit-min-device-pixel-ratio: 1) { 
@@ -1519,7 +1524,7 @@ font-size: 1rem;
   color: #555974;
 }
 
-.contact .info .email, .contact .info .phone {
+.contact .info .email, .contact .info .phone, .contact .info .whatsapp {
   margin-top: 40px;
 }
 
@@ -1789,11 +1794,20 @@ font-size: 1rem;
 
   .site-footer ul
   {
-    margin-right: 17% !important;
+    margin-right: 12% !important;
     list-style-position: inside;
   }
 }
 
+.footer-col
+{
+  padding-left: 10%;
+}
+
+.footer-content
+{
+  text-align: center;
+}
 
 .site-footer
 {
@@ -1802,7 +1816,16 @@ font-size: 1rem;
   line-height:24px;
   color:white;
   padding: 2%;
+  align-items: center;
 }
+
+.site-footer ul
+  {
+    margin-right: 12% !important;
+    list-style-position: inside;
+  }
+
+
 .site-footer hr
 {
   border-top-color:#bbb;
@@ -1829,6 +1852,11 @@ font-size: 1rem;
   color:white;
 }
 .site-footer li a:hover
+{
+  color:#10649c;
+  text-decoration:none;
+}
+.site-footer p a:hover
 {
   color:#10649c;
   text-decoration:none;

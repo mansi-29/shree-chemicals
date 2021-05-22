@@ -12,7 +12,7 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
-@media (min-width: 1300px)
+@media (min-width: 1360px)
 {
 .container, .container-lg, .container-md, .container-sm {
     max-width: 85rem;
@@ -614,6 +614,11 @@ align-items: center;
 
 .slick-arrow.slick-prev {
   left: -40px;
+}
+
+.slider-content
+{
+  font-size: 16px;
 }
 
 /* Media Queries */

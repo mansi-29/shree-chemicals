@@ -393,7 +393,7 @@ h1, h2, h3, h4, h5, h6 {
   flex-direction: column;
   text-align: center;
   position: relative;
-  height: 90vh;
+  height: 70vh;
   padding-top: 60px;
 }
 
@@ -650,7 +650,7 @@ section {
 }
 
 .section-title h2 {
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   font-weight: 500;
   padding-top: 3%;
   line-height: 1px;
